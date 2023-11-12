@@ -270,7 +270,7 @@ function Library:MakeResizable(Instance, MinSize)
         BackgroundColor3 = Color3.new(0, 0, 0);
         BackgroundTransparency = 1;
         BorderSizePixel = 0;
-        Size = UDim2.new(0, 100, 0, 100);
+        Size = UDim2.new(0, 190, 0, 190);
         Position = UDim2.new(1, -30, 1, -30);
         Visible = true;
         ClipsDescendants = true;
@@ -282,7 +282,7 @@ function Library:MakeResizable(Instance, MinSize)
         BackgroundColor3 = Library.AccentColor;
         BackgroundTransparency = 1;
         BorderSizePixel = 0;
-        Size = UDim2.new(2, 0, 2, 0);
+        Size = UDim2.new(5, 0, 5, 0);
         Position = UDim2.new(1, -30, 1, -30);
         ZIndex = 2;
         Parent = Resizer;
@@ -2951,7 +2951,7 @@ do
     local WatermarkOuter = Library:Create('Frame', {
         BorderColor3 = Color3.new(0, 0, 0);
         Position = UDim2.new(0, 100, 0, -25);
-        Size = UDim2.new(0, 210, 0, 40);
+        Size = UDim2.new(0, 50, 0, 10);
         ZIndex = 200;
         Visible = false;
         Parent = ScreenGui;
