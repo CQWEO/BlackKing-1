@@ -49,7 +49,7 @@ local Library = {
     ActiveTab = nil;
 	Toggled = false;
 	
-    MinSize = Vector2.new(550, 300);
+    MinSize = Vector2.new(1000, 900);
     IsMobile = false;
     DevicePlatform = Enum.Platform.None;
     CanDrag = true;
@@ -4014,7 +4014,7 @@ function Library:CreateWindow(...)
             Size = UDim2.new(1, -4, 1, 0);
             BackgroundTransparency = 1;
             Font = Library.Font;
-            Text = "  Mở/Đóng  ";
+            Text = "";
             TextColor3 = Library.FontColor;
             TextSize = 30;
             TextXAlignment = Enum.TextXAlignment.Left;
