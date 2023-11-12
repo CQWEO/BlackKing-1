@@ -4011,10 +4011,10 @@ function Library:CreateWindow(...)
     
         local ToggleUIButton = Library:Create('TextButton', {
             Position = UDim2.new(0, 5, 0, 0);
-            Size = UDim2.new(1, -4, 1, 0);
+            Size = UDim2.new(1, 5, 1, 0);
             BackgroundTransparency = 1;
             Font = Library.Font;
-            Text = "Toggle UI";
+            Text = "Mở/Đóng";
             TextColor3 = Library.FontColor;
             TextSize = 14;
             TextXAlignment = Enum.TextXAlignment.Left;
@@ -4081,10 +4081,10 @@ function Library:CreateWindow(...)
     
         local LockUIButton = Library:Create('TextButton', {
             Position = UDim2.new(0, 5, 0, 0);
-            Size = UDim2.new(1, -4, 1, 0);
+            Size = UDim2.new(0, 0, 0, 0);
             BackgroundTransparency = 1;
             Font = Library.Font;
-            Text = "Lock UI";
+            Text = "";
             TextColor3 = Library.FontColor;
             TextSize = 14;
             TextXAlignment = Enum.TextXAlignment.Left;
