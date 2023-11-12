@@ -1,4 +1,4 @@
--- Made By Rechedmcvn
+-- Made By Rechedmcvn and RechedmcvnGV
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local CoreGui = game:GetService('CoreGui');
@@ -2961,7 +2961,7 @@ do
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.AccentColor;
         BorderMode = Enum.BorderMode.Inset;
-        Size = UDim2.new(5, 0, 5, 0);
+        Size = UDim2.new(2, 0, 2, 0);
         ZIndex = 201;
         Parent = WatermarkOuter;
     });
@@ -4034,7 +4034,7 @@ function Library:CreateWindow(...)
 		local LockUIOuter = Library:Create('Frame', {
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.new(0.008, 0, 0.075, 0);
-            Size = UDim2.new(0, 0, 0, 00);
+            Size = UDim2.new(0, 0, 0, 0);
             ZIndex = 200;
             Visible = true;
             Parent = ScreenGui;
@@ -4044,7 +4044,7 @@ function Library:CreateWindow(...)
             BackgroundColor3 = Library.MainColor;
             BorderColor3 = Library.AccentColor;
             BorderMode = Enum.BorderMode.Inset;
-            Size = UDim2.new(1, 0, 1, 0);
+            Size = UDim2.new(0, 0, 0, 0);
             ZIndex = 201;
             Parent = LockUIOuter;
         });
