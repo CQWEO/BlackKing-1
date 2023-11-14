@@ -3964,7 +3964,7 @@ function Library:CreateWindow(...)
         local ToggleUIOuter = Library:Create('Frame', {
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.new(0.008, 0, 0.018, 0);
-            Size = UDim2.new(0, 150, 0, 70);
+            Size = UDim2.new(0, 90, 0, 50);
             ZIndex = 200;
             Visible = true;
             Parent = ScreenGui;
