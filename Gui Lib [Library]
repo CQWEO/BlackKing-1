@@ -49,7 +49,7 @@ local Library = {
     ActiveTab = nil;
 	Toggled = false;
 	
-    MinSize = Vector2.new(550, 300);
+    MinSize = Vector2.new(500, 500);
     IsMobile = false;
     DevicePlatform = Enum.Platform.None;
     CanDrag = true;
@@ -63,7 +63,7 @@ pcall(function() Library.DevicePlatform = InputService:GetPlatform(); end); -- F
 Library.IsMobile = (Library.DevicePlatform == Enum.Platform.Android or Library.DevicePlatform == Enum.Platform.IOS);
 
 if Library.IsMobile then
-    Library.MinSize = Vector2.new(550, 200); -- Make UI little bit smaller.
+    Library.MinSize = Vector2.new(500, 500); -- Make UI little bit smaller.
 end
 
 local RainbowStep = 0
@@ -3963,7 +3963,7 @@ function Library:CreateWindow(...)
         local ToggleUIOuter = Library:Create('Frame', {
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.new(0.008, 0, 0.018, 0);
-            Size = UDim2.new(0, 77, 0, 30);
+            Size = UDim2.new(0, 50, 0, 50);
             ZIndex = 200;
             Visible = true;
             Parent = ScreenGui;
@@ -4014,7 +4014,7 @@ function Library:CreateWindow(...)
             Size = UDim2.new(1, -4, 1, 0);
             BackgroundTransparency = 1;
             Font = Library.Font;
-            Text = "Toggle UI";
+            Text = "";
             TextColor3 = Library.FontColor;
             TextSize = 14;
             TextXAlignment = Enum.TextXAlignment.Left;
@@ -4033,7 +4033,7 @@ function Library:CreateWindow(...)
 		local LockUIOuter = Library:Create('Frame', {
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.new(0.008, 0, 0.075, 0);
-            Size = UDim2.new(0, 77, 0, 30);
+            Size = UDim2.new(0, 0, 0, 0);
             ZIndex = 200;
             Visible = true;
             Parent = ScreenGui;
@@ -4043,7 +4043,7 @@ function Library:CreateWindow(...)
             BackgroundColor3 = Library.MainColor;
             BorderColor3 = Library.AccentColor;
             BorderMode = Enum.BorderMode.Inset;
-            Size = UDim2.new(1, 0, 1, 0);
+            Size = UDim2.new(0, 0, 0, 0);
             ZIndex = 201;
             Parent = LockUIOuter;
         });
@@ -4056,7 +4056,7 @@ function Library:CreateWindow(...)
             BackgroundColor3 = Color3.new(1, 1, 1);
             BorderSizePixel = 0;
             Position = UDim2.new(0, 1, 0, 1);
-            Size = UDim2.new(1, -2, 1, -2);
+            Size = UDim2.new(0, 0, 0, 0);
             ZIndex = 202;
             Parent = LockUIInner;
         });
@@ -4081,10 +4081,10 @@ function Library:CreateWindow(...)
     
         local LockUIButton = Library:Create('TextButton', {
             Position = UDim2.new(0, 5, 0, 0);
-            Size = UDim2.new(1, -4, 1, 0);
+            Size = UDim2.new(0, 0, 0, 0);
             BackgroundTransparency = 1;
             Font = Library.Font;
-            Text = "Lock UI";
+            Text = "";
             TextColor3 = Library.FontColor;
             TextSize = 14;
             TextXAlignment = Enum.TextXAlignment.Left;
