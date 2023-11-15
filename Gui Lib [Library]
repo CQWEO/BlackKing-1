@@ -3963,7 +3963,7 @@ function Library:CreateWindow(...)
         local ToggleUIOuter = Library:Create('Frame', {
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.new(0.008, 0, 0.018, 0);
-            Size = UDim2.new(0, 77, 0, 30);
+            Size = UDim2.new(0, 50, 0, 25);
             ZIndex = 200;
             Visible = true;
             Parent = ScreenGui;
@@ -4014,7 +4014,7 @@ function Library:CreateWindow(...)
             Size = UDim2.new(1, -4, 1, 0);
             BackgroundTransparency = 1;
             Font = Library.Font;
-            Text = "Toggle UI";
+            Text = "";
             TextColor3 = Library.FontColor;
             TextSize = 14;
             TextXAlignment = Enum.TextXAlignment.Left;
@@ -4033,7 +4033,7 @@ function Library:CreateWindow(...)
 		local LockUIOuter = Library:Create('Frame', {
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.new(0.008, 0, 0.075, 0);
-            Size = UDim2.new(0, 77, 0, 30);
+            Size = UDim2.new(0, 0, 0, 0);
             ZIndex = 200;
             Visible = true;
             Parent = ScreenGui;
@@ -4084,7 +4084,7 @@ function Library:CreateWindow(...)
             Size = UDim2.new(1, -4, 1, 0);
             BackgroundTransparency = 1;
             Font = Library.Font;
-            Text = "Lock UI";
+            Text = "";
             TextColor3 = Library.FontColor;
             TextSize = 14;
             TextXAlignment = Enum.TextXAlignment.Left;
