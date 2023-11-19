@@ -698,7 +698,7 @@ function library:Introduction()
     edge.Name = "edge"
     edge.Parent = introduction
     edge.AnchorPoint = Vector2.new(0.5, 0.5)
-    edge.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+    edge.BackgroundColor3 = Color3.fromRGB(1, 35, 235)
     edge.BackgroundTransparency = 1
     edge.Position = UDim2.new(0.511773348, 0, 0.5, 0)
     edge.Size = UDim2.new(0, 300, 0, 308)
@@ -730,7 +730,7 @@ function library:Introduction()
     
     bar.Name = "bar"
     bar.Parent = barFolder
-    bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
+    bar.BackgroundColor3 = Color3.fromRGB(1, 35, 235)
     bar.BackgroundTransparency = 0.200
     bar.Size = UDim2.new(0, 0, 0, 1)
     
